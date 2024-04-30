@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS and Your Location</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>ISS and Your Location</h1>
+    <div class="center">
+        <img id="logo" src="images/logo1.png" alt="Space City Houston logo"/>
+        <select id="logo-selector">
+            <option value="logo1.png">Logo 1</option>
+            <option value="logo2.png">Logo 2</option>
+            <option value="logo3.png">Logo 3</option>
+        </select>
+        <label for="red">Red</label>
+        <input type="range" name="red" id="red" min=0 max=255>
+        <label for="green">Green</label>
+        <input type="range" name="green" id="green" min=0 max=255>
+        <label for="blue">Blue</label>
+        <input type="range" name="blue" id="blue" min=0 max=255>
+    </div>
+    <div>
+        <h2><span id="userName">{User's name goes here}</span>'s Location</h2>
+        <p id="actual-location">Loading...</p>
+    </div>
+    <!-- Uncomment the parts below for part 2 -->
+    <!-- <div>
+        <h2>ISS Location</h2>
+        <p id="iss-location">Loading...</p>
+    </div>
+    <div>
+        <h2>People in Space</h2>
+        <p id="num-people-in-space"></p>
+        <ul id="people-in-space"></ul>
+    </div> -->
+
+    <button id="clear-local-storage">Clear Local Storage</button>
+</body>
+</html>
